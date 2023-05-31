@@ -12,9 +12,9 @@ Imame 10 predikatni jazli, sto znaci deka ciklomatskata kompleksnost bi bila 11.
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-4.Ni trebaat 5 test slucai za multiple condition, eden ke frli exception.
+4.Test slucai za every branch condition, eden ke frli exception.
 
-1)Nema da imame username->ke frli exception
+1)User=null(ili site ili edno ke e null)->ke frli exception
 
 2)Ke postoi ednakov postoecki username, ke ima email koj sodzri @ i passwordot ke e validen spored golemina
 
@@ -28,7 +28,7 @@ Imame 10 predikatni jazli, sto znaci deka ciklomatskata kompleksnost bi bila 11.
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-5.(user==null || user.getPassword()==null || user.getEmail()==null
+5.(user==null || user.getPassword()==null || user.getEmail()==null)
 
 Dokolku uslovite se rasporedeni vo bilo koi od ovie vrednosti, sekogas ke dobivame
 
