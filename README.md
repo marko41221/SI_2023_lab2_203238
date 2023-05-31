@@ -1,10 +1,11 @@
 # SI_2023_lab2_203238
-2.Control Flow Graph: ![Untitled Workspace](https://github.com/marko41221/SI_2023_lab2_203238/assets/103193145/4ccda963-6879-4d79-862c-1f3bb3d76504)
+2.Control Flow Graph: ![siCFG drawio (1)](https://github.com/marko41221/SI_2023_lab2_203238/assets/103193145/0f6ecc26-62f4-44be-b008-661c07189111)
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 3.Ciklomatskata kompleksnost e presmetana so formulata P+1, kade P e brojot na predikatni jazli vo control flow graphot.
-Imame 8 predikatni jazli, sto znaci deka ciklomatskata kompleksnost bi bila 9.
+Imame 10 predikatni jazli, sto znaci deka ciklomatskata kompleksnost bi bila 11.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
