@@ -11,34 +11,12 @@ Imame 10 predikatni jazli, sto znaci deka ciklomatskata kompleksnost bi bila 11.
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-
-4.*If uslovot za (user==null || user.getPassword()==null || user.getEmail()==null) e true,ke dobieme RuntimeException
-
-*If uslovot za (user==null || user.getPassword()==null || user.getEmail()==null) e false,ke prodolzime kon sledniot if uslov
-
-*If uslovot vo user.getUsername()==null e true se dodava username na emailot
-
-*If uslovot vo user.getUsername()==null e false kodot ke produzi kon sledniot del
-
-*If uslovot vo user.getEmail().contains("@") && user.getEmail().contains(".") e false "same" ne se inkrementira
-
-*If uslovot vo user.getEmail().contains("@") && user.getEmail().contains(".") e true zapocnuva loopot
-
-*If uslovot za existingUser.getEmail() == user.getEmail() e false, "same" ne se inkrementira
-
-*If uslovot za existingUser.getEmail() == user.getEmail() e true, "same" se inkrementira
-
-*If uslovot za existingUser.getUsername() == user.getUsername() e false, "same" ne se inkrementira
-
-*If uslovot za existingUser.getUsername() == user.getUsername() e true, "same" se inkrementira
-
-*Passwordot go sodrzi usernameot ili  <8, dobivame false
-
-*Passwordot ne go sodrzi usernameot, >8 i ne sodrzi nikakvo prazno mesto, kodot prodozluva
-
-*Passwordot ne sodrzi nikakov specijalen znak, "same"!=0, dobivame false 
-
-*Passwordot sodrzi barem eden specijalen znak, "same"!=0,dobivame same==0 i funkcijata vrakja true
+4.Ni trebaat 5 test slucai za multiple condition, eden ke frli exception.
+1.Nema da imame username->ke frli exception
+2.Ke postoi ednakov postoecki username, ke ima email koj sodzri @ i passwordot ke e validen spored golemina
+3.Postoecki username,nepostoecki email,password koj ke bide pogolem od dozvolenata golemina, bez prazno mesto, bez da sodrzi username vo nego i bez prazno mesto.
+4.Usernameot nema da bide ednakov, emailot nema da sodrzi @ i nema da e ednakov, passwordot ke bide so prazno mesto i pogolem od dozvolenata golemina.
+5.Nema da postoi username, ke imame postoecki email koj ne sodrzi @ i passwordot ke e pogolem od dozbolenoto koj ke bide bez specijalni znaci i bez prazno mesto.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
