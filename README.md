@@ -1,6 +1,6 @@
 # SI_2023_lab2_203238
 2.Control Flow Graph: ![siCFG drawio (1)](https://github.com/marko41221/SI_2023_lab2_203238/assets/103193145/0f6ecc26-62f4-44be-b008-661c07189111)
-
+https://imgur.com/a/P0of4dj (vo slucaj da ne se prikaze slikata od cfg)
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
